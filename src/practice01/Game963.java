@@ -2,7 +2,7 @@ package practice01;
 
 public class Game963 {
 	public static void main(String[] args) {
-
+		
 		for (int i = 1; i <= 99; i++) {
 
 			String s = String.valueOf(i);
@@ -11,7 +11,8 @@ public class Game963 {
 			int ClapCount = 0;
 			char c = s.charAt(0);
 			int j = s.length();
-
+			
+			
 			if (s.length() == 1) {
 
 				if (c == '3' || c == '6' || c == '9') {
@@ -30,8 +31,10 @@ public class Game963 {
 				}
 
 			}
+			
 			int result = ClapCount + ClapCount1;
 			System.out.print(i + " ");
+			
 			for (int z = 0; z < result; z++) {
 
 				System.out.print("짝");
