@@ -24,19 +24,19 @@ public class GuessNumber {
 			} else if (i < guessNumber) {
 				System.out.println(" 더 높게 ");
 			} else {
-				System.out.println("정답입니다.");
-				break;
+				System.out.println("정답입니다.");		
+				System.out.println(" 계속 하시겠습니까 ? ");
+				String answer = scan.next();
+				if( answer.equals("y") ){
+			   	continue;
+				}else {
+			 	break;
+				}
 			}
 
 		}
 		
-		System.out.println(" 계속 하시겠습니까 ? ");
-		String answer = scan.next();
-		if( answer.equals("y") ){
-		   	System.out.println("어찌올라가");
-		}else {
-		 
-		}
+
 		
 		scan.close();
 	}
