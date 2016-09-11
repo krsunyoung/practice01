@@ -4,14 +4,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GuessNumber {
-	public static void main(String[] args) {
 
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
 		Random r = new Random();
 		int guessNumber = r.nextInt(100) + 1;
 
-		System.out.println(guessNumber);
 		
 		System.out.println(" 값을 결정했습니다. 입력해주세요");
 
@@ -30,6 +29,18 @@ public class GuessNumber {
 			}
 
 		}
+		
+		System.out.println(" 계속 하시겠습니까 ? ");
+		String answer = scan.next();
+		if( answer.equals("y") ){
+		   	System.out.println("어찌올라가");
+		}else {
+		 
+		}
+		
 		scan.close();
 	}
+
+	
+
 }
